@@ -16,13 +16,13 @@ import (
 {{- if .WithProto }}
 	"{{ .PkgName }}/internal/proto/public"
 {{- end }}
-	_ "github.com/xieziyu/go-coco/app/server/profile"
-	"github.com/xieziyu/go-coco/app/server/xecho"
-	"github.com/xieziyu/go-coco/app/server/xecho/middleware"
+	_ "github.com/iftechio/go-coco/app/server/profile"
+	"github.com/iftechio/go-coco/app/server/xecho"
+	"github.com/iftechio/go-coco/app/server/xecho/middleware"
 {{- if .WithProto }}
-	"github.com/xieziyu/go-coco/app/server/xgrpc"
+	"github.com/iftechio/go-coco/app/server/xgrpc"
 {{- end }}
-	logger "github.com/xieziyu/go-coco/utils/logger"
+	logger "github.com/iftechio/go-coco/utils/logger"
 )
 
 type Server struct {
@@ -110,7 +110,7 @@ func AppGrpc() string {
 
 import (
 	"{{ .PkgName }}/internal/config"
-	"github.com/xieziyu/go-coco/app/server/xgrpc"
+	"github.com/iftechio/go-coco/app/server/xgrpc"
 {{- if .WithProto }}
 	"{{ .PkgName }}/internal/grpc/public"
 {{- end }}
@@ -166,7 +166,7 @@ import (
 	"github.com/getsentry/sentry-go"
 {{- end }}
 	"{{ .PkgName }}/internal/config"
-	logger "github.com/xieziyu/go-coco/utils/logger"
+	logger "github.com/iftechio/go-coco/utils/logger"
 )
 
 type Jobs struct {
@@ -215,9 +215,9 @@ import (
 
 	"{{ .PkgName }}/internal/config"
 	"{{ .PkgName }}/internal/infra"
-	"github.com/xieziyu/go-coco/app/looper"
-	"github.com/xieziyu/go-coco/utils/sync/errgroup"
-	logger "github.com/xieziyu/go-coco/utils/logger"
+	"github.com/iftechio/go-coco/app/looper"
+	"github.com/iftechio/go-coco/utils/sync/errgroup"
+	logger "github.com/iftechio/go-coco/utils/logger"
 )
 
 type Jobs struct {

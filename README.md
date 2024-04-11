@@ -7,7 +7,7 @@
   <p align="center">
     适配各种基础设施的微服务框架，搭配 <a href="https://github.com/google/wire">wire</a> 依赖注入模式可写出更简洁和安全的代码。
     <br />
-    <a href="https://github.com/xieziyu/go-coco"><strong>Explore »</strong></a>
+    <a href="https://github.com/iftechio/go-coco"><strong>Explore »</strong></a>
     <br />
   </p>
 </div>
@@ -47,7 +47,7 @@
 ### Installation
 
 ```sh
-go get github.com/xieziyu/go-coco@latest
+go get github.com/iftechio/go-coco@latest
 ```
 
 ### App
@@ -118,7 +118,7 @@ go-coco 提供了便捷的 cli 工具用于快速生成一个基于 wire 的微�
 ### CLI Installation
 
 ```sh
-go install github.com/xieziyu/go-coco@latest
+go install github.com/iftechio/go-coco@latest
 ```
 
 ### Dependencies
@@ -159,8 +159,8 @@ Flags:
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
-[ci-badge]: https://github.com/xieziyu/go-coco/actions/workflows/ci.yml/badge.svg
-[ci-url]: https://github.com/xieziyu/go-coco/actions/workflows/ci.yml
+[ci-badge]: https://github.com/iftechio/go-coco/actions/workflows/ci.yml/badge.svg
+[ci-url]: https://github.com/iftechio/go-coco/actions/workflows/ci.yml
 [buf]: https://docs.buf.build/installation
 [wire]: https://github.com/google/wire
 [coco-example]: ./docs/coco.svg

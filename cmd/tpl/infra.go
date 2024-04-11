@@ -6,7 +6,7 @@ func InfraSentry() string {
 import (
 	"github.com/getsentry/sentry-go"
 	"{{ .PkgName }}/internal/config"
-	"github.com/xieziyu/go-coco/infra"
+	"github.com/iftechio/go-coco/infra"
 )
 
 type Sentry = infra.Sentry
@@ -26,7 +26,7 @@ func InfraMongo() string {
 
 import (
 	"{{ .PkgName }}/internal/config"
-	"github.com/xieziyu/go-coco/infra"
+	"github.com/iftechio/go-coco/infra"
 	"go.mongodb.org/mongo-driver/mongo"
 )
 
@@ -57,7 +57,7 @@ func InfraRedis() string {
 
 import (
 	"{{ .PkgName }}/internal/config"
-	"github.com/xieziyu/go-coco/infra"
+	"github.com/iftechio/go-coco/infra"
 )
 
 type Redis struct {

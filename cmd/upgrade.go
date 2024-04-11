@@ -12,7 +12,7 @@ var upgradeCmd = &cobra.Command{
 	Long:  `Install latest version of go-coco`,
 	Run: func(cmd *cobra.Command, args []string) {
 		report(flagSuccess, "upgrading...")
-		err := exec.Command("go", "install", "github.com/xieziyu/go-coco@latest").Run()
+		err := exec.Command("go", "install", "github.com/iftechio/go-coco@latest").Run()
 		report(flagSuccess, "done")
 		cobra.CheckErr(err)
 	},

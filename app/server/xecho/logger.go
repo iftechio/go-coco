@@ -4,9 +4,9 @@ import (
 	"io"
 	"os"
 
+	xLogger "github.com/iftechio/go-coco/utils/logger"
 	"github.com/labstack/echo/v4"
 	"github.com/labstack/gommon/log"
-	xLogger "github.com/xieziyu/go-coco/utils/logger"
 )
 
 type logger struct{}

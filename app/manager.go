@@ -5,9 +5,9 @@ import (
 	"os/signal"
 	"syscall"
 
-	"github.com/xieziyu/go-coco/infra"
-	"github.com/xieziyu/go-coco/utils/logger"
-	"github.com/xieziyu/go-coco/utils/sync/errgroup"
+	"github.com/iftechio/go-coco/infra"
+	"github.com/iftechio/go-coco/utils/logger"
+	"github.com/iftechio/go-coco/utils/sync/errgroup"
 )
 
 type Manager struct {

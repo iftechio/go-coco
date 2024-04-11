@@ -6,8 +6,8 @@ import (
 	"syscall"
 	"time"
 
+	"github.com/iftechio/go-coco/utils/logger"
 	"github.com/pkg/errors"
-	"github.com/xieziyu/go-coco/utils/logger"
 )
 
 // 分布式锁

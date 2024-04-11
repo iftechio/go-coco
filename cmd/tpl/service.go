@@ -10,7 +10,7 @@ func MainGo() string {
 import (
 	_ "go.uber.org/automaxprocs"
 
-	logger "github.com/xieziyu/go-coco/utils/logger"
+	logger "github.com/iftechio/go-coco/utils/logger"
 )
 
 func main() {
@@ -129,7 +129,7 @@ import (
 {{- if .Apps.Looper }}
 	"{{ .PkgName }}/internal/looper"
 {{- end }}
-	"github.com/xieziyu/go-coco/app"
+	"github.com/iftechio/go-coco/app"
 )
 
 // AppManager is the manager of all the applications
@@ -236,7 +236,7 @@ func ConfigGo() string {
 import (
 	_ "embed" // embed config toml
 
-	"github.com/xieziyu/go-coco/config"
+	"github.com/iftechio/go-coco/config"
 )
 
 //go:embed config.toml

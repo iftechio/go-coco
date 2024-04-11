@@ -3,7 +3,7 @@ package errgroup_test
 import (
 	"context"
 
-	"github.com/xieziyu/go-coco/utils/sync/errgroup"
+	"github.com/iftechio/go-coco/utils/sync/errgroup"
 )
 
 var job = func(ctx context.Context) error { return nil }

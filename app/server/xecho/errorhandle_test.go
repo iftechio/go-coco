@@ -13,8 +13,8 @@ import (
 	"github.com/labstack/echo/v4"
 	"github.com/stretchr/testify/assert"
 
-	"github.com/xieziyu/go-coco/app/server/custom"
-	"github.com/xieziyu/go-coco/app/server/xecho/middleware"
+	"github.com/iftechio/go-coco/app/server/custom"
+	"github.com/iftechio/go-coco/app/server/xecho/middleware"
 )
 
 func Test_handleError(t *testing.T) {

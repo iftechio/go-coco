@@ -1,5 +1,4 @@
-// module github.com/xieziyu/go-coco
-module github.com/xieziyu/go-coco
+module github.com/iftechio/go-coco
 
 go 1.18
 

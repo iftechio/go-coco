@@ -4,7 +4,7 @@ import (
 	"os/exec"
 	"path"
 
-	"github.com/xieziyu/go-coco/cmd/tpl"
+	"github.com/iftechio/go-coco/cmd/tpl"
 )
 
 type SvcApps struct {
@@ -57,8 +57,8 @@ var protoMods = []string{
 }
 
 var requiredMods = []string{
-	"github.com/xieziyu/go-coco",
-	"github.com/xieziyu/go-coco/utils/logger",
+	"github.com/iftechio/go-coco",
+	"github.com/iftechio/go-coco/utils/logger",
 	"github.com/google/wire",
 	"go.uber.org/automaxprocs",
 }

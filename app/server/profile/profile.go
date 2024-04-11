@@ -7,7 +7,7 @@ import (
 	"strings"
 
 	"github.com/google/gops/agent"
-	xLogger "github.com/xieziyu/go-coco/utils/logger"
+	xLogger "github.com/iftechio/go-coco/utils/logger"
 )
 
 const (

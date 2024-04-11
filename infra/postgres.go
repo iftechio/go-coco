@@ -4,8 +4,8 @@ import (
 	"context"
 
 	"github.com/go-pg/pg/v10"
+	"github.com/iftechio/go-coco/utils/logger"
 	"github.com/pkg/errors"
-	"github.com/xieziyu/go-coco/utils/logger"
 )
 
 type Postgres struct {

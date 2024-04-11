@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+option go_package = "./;testdata";
+
+package test;
+
+service DemoService {
+  rpc Call(Request) returns (Response);
+}
+
+message Request {
+  string arg = 1;
+}
+
+message Response {
+  string ans = 2;
+}

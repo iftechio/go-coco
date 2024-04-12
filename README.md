@@ -37,6 +37,22 @@
 
 ## Getting Started
 
+使用 go-coco cli 构建一个新项目：
+```bash
+# 安装 go-coco cli
+go install github.com/iftechio/go-coco@latest
+
+# 创建项目目录
+mkdir <proj_root>
+cd <proj_root>
+
+# 确保 `go-coco` 在包含 `go.mod` 的目录下运行
+go mod init <app_name>
+
+go-coco init <micro_service_name>
+```
+
+Notes:
 1. 使用 `app.Manager` 组织需要启动的微服务应用
 2. 使用 `config` 解析来自 toml 和 env 的应用变量配置
 3. 使用 `infra` 快速构建基础层组件

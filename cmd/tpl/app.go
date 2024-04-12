@@ -56,6 +56,13 @@ func (s *Server) Start() error {
 {{- end }}
 	// TODO: Add Routings
 {{- if .WithProto }}
+	s.srv.Use(xgrpc.GatewayMiddleware(
+		public.RegisterPublicServiceHandlerFromEndpoint,
+		s.conf.GRPCAddr,
+		"/1.0",
+	))
+{{ end }}
+{{- if .WithProto }}
 	// Swagger Doc
 	s.srv.GET("/swagger/*", echo.WrapHandler(http.FileServer(http.FS(swagger))))
 {{- end }}

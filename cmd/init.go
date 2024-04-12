@@ -208,6 +208,9 @@ type CurDir struct {
 func modInfoJSON(args ...string) []byte {
 	cmdArgs := append([]string{"list", "-json"}, args...)
 	out, err := exec.Command("go", cmdArgs...).Output()
+	if len(out) == 0 {
+		panic("No 'go.mod' found, please make sure to run 'go-coco' in golang project directory containing 'go.mod' file.")
+	}
 	cobra.CheckErr(err)
 	return out
 }

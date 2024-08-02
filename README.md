@@ -141,6 +141,17 @@ go install github.com/iftechio/go-coco@latest
 
 首先你需要安装 [wire]。同时，由于 go-coco cli 提供了基于 protobuf + grpc-gateway 的实现方案生成，如果你希望在项目中使用 http + grpc 这样的解决方案，需要提前安装 [buf]
 
+**wire.go**
+
+是 wire 依赖注入框架的配置文件，定义了如何使用 wire 来自动生成依赖注入代码，以简化依赖管理和对象的创建过程。为了方便在 IDE 中编写 wire.go 文件，可以为 IDE 所使用的 go language server 添加 `wireinject` build tag 配置（以 gopls 为例）
+```
+"gopls": {
+  "build.buildFlags": [
+    "-tags=wireinject"
+  ]
+}
+```
+
 ### Commands
 
 #### 升级 CLI
